@@ -40,6 +40,8 @@ jobs:
       # Build APK for Android
 
       # Build for Web with HTML Renderer
+      - run: flutter build apk
+
       - run: flutter build web --web-renderer html --release
 
       - name: Push to Releases
